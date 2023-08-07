@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class CustomBorder
-
 CustomBorder = {}
 
 --- Creates a new `CustomBorder` object.

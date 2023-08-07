@@ -1,45 +1,6 @@
 ---@meta
 
 ---@class BaseEntity
---- METHODS ---
---- GETTERS ---
----@field GetAbsFacing function Returns the entity's abs facing direction.
----@field GetAngles function Returns the angles of the entity.
----@field GetClassName function Returns the classname of the entity.
----@field GetFriction function Returns the friction of the entity.
----@field GetGravity function Returns the gravity of the entity.
----@field GetId function Returns the ID of the entity.
----@field GetName function Returns the name of the entity.
----@field GetOrigin function Returns the abs origin of the entity.
----@field GetOwner function Returns the owner of the entity.
----@field GetRenderFx function Returns the render FX of the entity.
----@field GetTeam function Returns the team of the entity.
----@field GetTeamId function Returns the team ID of the entity.
----@field GetVelocity function Returns the velocity of the entity.
----@field GetWorldMins function Returns the entity's world mins.
----@field GetWorldMaxs function Returns the entity's world maxs.
---- SETTERS ---
----@field SetAngles function Sets the angles of the entity.
----@field SetFriction function Sets the friction of the entity.
----@field SetGravity function Sets the gravity of the entity.
----@field SetName function Sets the name of the entity.
----@field SetModel function Sets the model of the entity.
----@field SetOrigin function Sets the abs origin of the entity.
----@field SetRenderColor function Sets the render color of the entity.
----@field SetRenderFx function Sets the render FX of the entity.
----@field SetRenderMode function Sets the render mode of the entity.
----@field SetSkin function Sets the skin of the entity's model.
----@field SetVelocity function Sets the velocity of the entity.
---- BOOLEANS ---
----@field IsOnFire function Returns `true` if the entity is on fire.
---- MISCELLANEOUS
----@field ClearRenderFx function Clears the render FX of the entity.
----@field EmitSound function Emits a sound from the entity.
----@field StopSound function Stops the sound emitted from the entity.
----@field StartTrail function Makes the entity start emitting a trail.
----@field StopTrail function Makes the entity stop emitting trails.
----@field Teleport function Teleports the entity.
-
 BaseEntity = {}
 
 --- Emits a sound from the entity.
@@ -78,19 +39,19 @@ function BaseEntity:GetName() end
 ---@param name string The name of the entity.
 function BaseEntity:SetName(name) end
 
---- Gets the team of the entity.
+--- Returns the team of the entity.
 ---@return Team
 function BaseEntity:GetTeam() end
 
---- Gets the team ID of the entity.
+--- Returns the team ID of the entity.
 ---@return integer
 function BaseEntity:GetTeamId() end
 
---- Gets the ID of the entity.
+--- Returns the ID of the entity.
 ---@return integer
 function BaseEntity:GetId() end
 
---- Gets the velocity of the entity.
+--- Returns the velocity of the entity.
 ---@return Vector
 function BaseEntity:GetVelocity() end
 
@@ -98,7 +59,7 @@ function BaseEntity:GetVelocity() end
 ---@param velocity Vector The velocity to set.
 function BaseEntity:SetVelocity(velocity) end
 
---- Gets the owner of the entity.
+--- Returns the owner of the entity.
 ---@return BaseEntity
 function BaseEntity:GetOwner() end
 
@@ -197,7 +158,7 @@ function BaseEntity:SetRenderMode(render_mode, force_update) end
 ---@param render_fx RenderFx The render FX to set.
 function BaseEntity:SetRenderFx(render_fx) end
 
---- Gets the render FX of the entity.
+--- Returns the render FX of the entity.
 ---@return RenderFx
 function BaseEntity:GetRenderFx() end
 

@@ -1,38 +1,6 @@
 ---@meta
 
 ---@class info_ff_script : BaseEntity
----@field Drop function Makes the player or entity carrying the `info_ff_script` drop it.
----@field Pickup function Makes the specified player or entity pick the `info_ff_script` up.
----@field Respawn function Forces the `info_ff_script` to respawn.
----@field Return function Forces the `info_ff_script` to return to it's home position.
----@field IsCarried function Returns `true` if the `info_ff_script` is being carried by a player or an entity.
----@field IsReturned function Returns `true` if the `info_ff_script` has returned to it's home position.
----@field IsDropped function Returns `true` if the `info_ff_script` is dropped after being touched by a player.
----@field IsActive function Returns `true` if the `info_ff_script` is active.
----@field IsInactive function Returns `true` if the `info_ff_script` is inactive.
----@field IsRemoved function Returns `true` if the `info_ff_script` is removed.
----@field GetCarrier function Returns the carrier of the `info_ff_script` when it's being carried.
----@field GetDropper function Returns the dropper of the `info_ff_script` after it's dropped.
----@field Remove function Removes the `info_ff_script` from the map.
----@field Restore function Restores the `info_ff_script` in the map.
----@field GetOrigin function Returns the origin of the `info_ff_script`.
----@field SetOrigin function Sets the origin of the `info_ff_script`.
----@field GetAngles function Returns the angles of the `info_ff_script`.
----@field SetAngles function Sets the angles of the `info_ff_script`.
----@field SetBotGoalInfo function Sets the bot's goal info for the `info_ff_script`.
----@field SpawnBot function Spawns a bot. (no it doesn't, ff doesn't have bots)
----@field SetModel function Sets the model of the `info_ff_script`.
----@field GetModel function Returns the model of the `info_ff_script`.
----@field SetStartOrigin function Sets the starting origin of the `info_ff_script`.
----@field GetStartOrigin function Returns the starting origin of the `info_ff_script`.
----@field SetStartAngles function Sets the starting angles of the `info_ff_script`.
----@field GetStartAngles function Returns the starting angles of the `info_ff_script`.
----@field SetTouchFlags function Sets the touch flags of the `info_ff_script`.
----@field SetDisallowTouchFlags function Sets the disallowed touch flags of the `info_ff_script`.
----@field GetAngularVelocity function Returns the angular velocity of the `info_ff_script`.
----@field SetAngularVelocity function Sets the angular velocity of the `info_ff_script`.
----@field new function --- Creates a new `info_ff_script` object.
-
 info_ff_script = {}
 
 --- Creates a new `info_ff_script` object.
@@ -47,7 +15,7 @@ end
 
 --- Makes the player or entity carrying the `info_ff_script` drop it.
 ---@param return_time number The number of seconds before the `info_ff_script` returns to it's home position.
----@param speed number The speed at which the `info_ff_script` is dropped towards the direction player is facing.
+---@param speed? number The speed at which the `info_ff_script` is dropped towards the direction player is facing.
 function info_ff_script:Drop(return_time, speed) end
 
 --- Makes the player or entity carrying the `info_ff_script` drop it.

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@enum ClipFlags
-
 ClipFlags = {
     kClipTeamBlue               = 1 << 0,
     kClipTeamRed                = 1 << 1,

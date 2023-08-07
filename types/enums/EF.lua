@@ -1,7 +1,6 @@
 ---@meta
 
 ---@enum EF
-
 EF = {
     kOnfire      = 0,
     kConc        = 1,

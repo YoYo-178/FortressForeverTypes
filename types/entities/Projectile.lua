@@ -1,5 +1,4 @@
 ---@meta
 
 ---@class Projectile
-
 Projectile = {}

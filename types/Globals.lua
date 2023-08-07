@@ -29,5 +29,9 @@ EVENT_DISALLOWED = false
 --- Defines that the entity is on none of the teams.
 NO_TEAM = "unknown"
 
+--- The table of all entities, Global entity list.
+---@type table<BaseEntity>
+GlobalEntityList = {}
+
 ---@type BaseEntity
 entity = BaseEntity

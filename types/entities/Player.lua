@@ -1,111 +1,6 @@
 ---@meta
 
 ---@class Player : BasePlayer
---- GETTERS
----@field GetSpeed function Returns the current speed of the player.
----@field GetClass function Returns the class index of the player.
----@field GetName function Returns the name of the player.
----@field GetArmor function Returns the armor of the player.
----@field GetMaxArmor function Returns the max armor capacity of the player.
----@field GetArmorAbsorption function Returns the armor type of the player.
----@field GetHealth function Returns the health of the player.
----@field GetMaxHealth function Returns the max health of the player.
----@field GetFortPoints function Returns the player's fortpoints.
----@field GetFrags function Returns the player's frags/kills.
----@field GetLocation function Returns the player's location.
----@field GetLocationTeam function Returns the location's team.
----@field GetActiveWeaponName function Returns the weapon's name that's been held by the player.
----@field GetDisguisedClass function Returns the class the player is disguised as.
----@field GetDisguisedTeam function Returns the team the player is disguised as.
----@field GetSteamID function Returns the player's steam ID.
----@field GetPing function Returns the player's network ping.
----@field GetPacketloss function Returns the player's network packet loss.
----@field GetSpeedMod function Returns the player's active speed mod.
----@field GetAmmoInClip function Returns the ammo inside the specified weapon's clip.
----@field GetAmmoCount function Returns the ammo count that the player has of the specified ammo type.
----@field GetSentryGun function Returns the player's Sentry Gun.
----@field GetDispenser function Returns the player's Dispenser.
----@field GetDetpack function Returns the player's Detpack.
----@field GetJumpPad function Returns the player's Jumppad.
----@field GetEyeAngles function Returns the player's eye angles.
----@field GetJetpackFuelPercent function Returns the player's jetpack fuel percentage.
----@field GetDeaths function Returns the player's deaths.
----@field MaxSpeed function Returns the max speed of the player.
---- SETTERS
----@field SetDisguisable function Sets whether the player is allowed to disguise or not.
----@field SetCloakable function Sets whether the player is allowed to cloak or not.
----@field SetRespawnable function Sets whether the player is allowed to respawn or not.
----@field SetLocation function Sets the player's location.
----@field SetRespawnDelay function Sets the respawn delay for the player.
----@field SetDisguise function Sets the player's disguise.
----@field SetAmmoInClip function Sets the clip's ammo count of the specified weapon of the player.
----@field SetJetpackFuelPercent function Sets the player's jetpack fuel percentage.
---- BOOLEANS
----@field IsFeetDeepInWater function Returns `true` if the player's feet is deep in water.
----@field IsInNoBuild function Returns `true` if the player is in a `nobuild` zone.
----@field IsUnderWater function Returns `true` if the player is underwater.
----@field IsWaistDeepInWater function Returns `true` if the player's waist is deep in water.
----@field IsInAttack1 function Returns `true` if the player is using `+attack1`.
----@field IsInAttack2 function Returns `true` if the player is using `+attack2`.
----@field IsInUse function Returns `true` if the player is using the `use` key.
----@field IsInJump function Returns `true` if the player is jumping.
----@field IsInForward function Returns `true` if the player is moving forward.
----@field IsInBack function Returns `true` if the player is moving backward.
----@field IsInMoveLeft function Returns `true` if the player is moving left.
----@field IsInMoveRight function Returns `true` if the player is moving right.
----@field IsInLeft function Returns `true` if the player is moving left.
----@field IsInRight function Returns `true` if the player is moving right.
----@field IsInRun function Returns `true` if the player is running.
----@field IsInReload function Returns `true` if the player is reloading.
----@field IsInSpeed function Returns `true` if the player is in speed.
----@field IsInWalk function Returns `true` if the player is walking.
----@field IsInZoom function Returns `true` if the player is zoomed in.
----@field IsOnGround function Returns `true` if the player is on ground.
----@field IsInAir function Returns `true` if the player is in air.
----@field IsDucking function Returns `true` if the player is ducking/crouching.
----@field IsBot function Returns `true` if the player is a bot.
----@field IsFlashlightOn function Returns `true` if the player has their flashlight on.
----@field IsGrenade1Primed function function Returns `true` if the player has their grenade 1 primed.
----@field IsGrenade2Primed function function Returns `true` if the player has their grenade 2 primed.
----@field IsGrenadePrimed function function Returns `true` if the player has any of the grenades primed.
----@field IsDisguisable function function Returns `true` if the player is allowed to disguise.
----@field IsCloakable function function Returns `true` if the player is allowed to cloak.
----@field IsRespawnable function function Returns `true` if the player is allowed to respawn.
----@field IsFeigned function function Returns `true` if the player is feigned.
----@field IsCloaked function function Returns `true` if the player is cloaked.
----@field IsDisguised function function Returns `true` if the player is disguised.
----@field IsEffectActive function function Returns `true` if the player has the specified effect active.
----@field IsFrozen function function Returns `true` if the player is frozen.
----@field IsAlive function function Returns `true` if the player is alive.
----@field OwnsWeaponType function Returns `true` if the player owns the specified type of weapon.
----@field HasItem function Returns `true` if the player has the specified entity.
---- MISCELLANEOUS
----@field AddAmmo function Adds the specified type of ammo and the specified amount of ammo to the player.
----@field AddArmor function Adds the specified amount of armor to the player.
----@field AddFrags function Adds the specified amount of frags/kills to the player.
----@field AddFortPoints function Adds the specified amount of fortpoints to the player.
----@field AddHealth function Adds the specified amount of health to the player.
----@field MarkRadioTag function Marks the player as Radio Tagged.
----@field RemoveAllAmmo function Removes all ammo from the player.
----@field RemoveAmmo function Removes the specified ammo type and specified amount of it.
----@field RemoveArmor function Removes the specified amount of armor from the player
----@field RemoveLocation function Removes the player's location.
----@field Respawn function Respawns the player.
----@field RemoveBuildables function Removes the player's buildables.
----@field RemoveProjectiles function Removes the player's projectiles.
----@field RemoveItems function Removes player's buildables and projectiles.
----@field GiveWeapon function Gives the specified weapon to the player.
----@field RemoveWeapon function Removes the specified weapon from the player.
----@field RemoveAllWeapons function Removes all weapons from the player.
----@field ResetDisguise function Resets the player's disguise.
----@field AddEffect function Adds the specified effect onto the player.
----@field RemoveEffect function Removes the specified effect from the player.
----@field Spectate function Forces the player into spectate mode.
----@field Freeze function Freezes the player into place.
----@field LockInPlace function Locks the player into place.
----@field SpeedMod function Adds a speed mod to the player.
----@field ReloadClips function Reloads player's weapon clips.
----@field SendBotMessage function unknown.
 Player = {}
 
 --- CLASSES ENUM.
@@ -204,9 +99,9 @@ function Player:GetFrags() end
 function Player:GetDeaths() end
 
 --- Returns `true` if the player has the specified item.
----@param item info_ff_script | string
+---@param item_name string The name of the item.
 ---@return boolean
-function Player:HasItem(item) end
+function Player:HasItem(item_name) end
 
 --- Returns `true` if the player's feet are deep in water.
 ---@return boolean
@@ -311,8 +206,9 @@ function Player:IsFlashlightOn() end
 function Player:MarkRadioTag(tagger, start_time, duration) end
 
 --- Returns `true` if the player owns the specified type of weapon.
+---@param weapon string The weapon to check.
 ---@return boolean
-function Player:OwnsWeaponType() end
+function Player:OwnsWeaponType(weapon) end
 
 --- Removes all ammo from the player.
 ---@param remove_clips boolean If set to `true`, removes the ammo from the clips of the weapons too.
@@ -391,7 +287,7 @@ function Player:GetActiveWeaponName() end
 
 --- Gives the specified weapon to the player.
 ---@param weapon string The weapon to give.
----@param autoselect boolean Whether to equip the player with the gun or silently add it to their inventory.
+---@param autoselect? boolean Whether to equip the player with the gun or silently add it to their inventory.
 function Player:GiveWeapon(weapon, autoselect) end
 
 --- Removes the specified weapon from the player.
@@ -547,8 +443,8 @@ function Player:SendBotMessage(message, d1, d2) end
 function Player:SendBotMessage(message, d1, d2, d3) end
 
 --- Returns the player's Sentry Gun.
----@return SentryGun
-function Player:GetSentryGun() end
+---@return Sentrygun
+function Player:GetSentrygun() end
 
 --- Returns the player's Dispenser.
 ---@return Dispenser

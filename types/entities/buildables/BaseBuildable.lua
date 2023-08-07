@@ -1,10 +1,6 @@
 ---@meta
 
 ---@class BaseBuildable : BaseEntity
----@field GetTeamId function Returns the buildable's team ID.
----@field GetOwner function Returns the buildable's owner.
----@field GetTeam function Returns the buildable's team.
-
 BaseBuildable = {}
 
 --- Returns the buildable's team ID.
@@ -12,7 +8,7 @@ BaseBuildable = {}
 function BaseBuildable:GetTeamId() end
 
 --- Returns the buildable's owner.
----@return FFPlayer
+---@return Player
 function BaseBuildable:GetOwner() end
 
 --- Returns the buildable's team.

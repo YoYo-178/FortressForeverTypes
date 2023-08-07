@@ -1,7 +1,6 @@
 ---@meta
 
 ---@enum RenderFx
-
 RenderFx = {
     kPulseSlow     = 1,
     kPulseFast     = 2,

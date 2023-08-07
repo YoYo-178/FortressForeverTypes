@@ -1,14 +1,6 @@
 ---@meta
 
----@class trigger_ff_script : Trigger
----@field IsActive function Returns `true` if the `trigger_ff_script` is active.
----@field IsInactive function Returns `true` if the `trigger_ff_script` is inactive.
----@field IsRemoved function Returns `true` if the `trigger_ff_script` is removed from the map.
----@field Remove function Removes the `trigger_ff_script` from the map.
----@field Restore function Returns `true` if the `trigger_ff_script` is restored in the map.
----@field IsTouching function Returns `true` if the specified entity is touching the `trigger_ff_script`.
----@field SetBotGoalInfo function Sets the bot's goal info for the `trigger_ff_script`.
-
+---@class trigger_ff_script : BaseTrigger
 trigger_ff_script = {}
 
 --- Creates a new `trigger_ff_script` object.
@@ -18,9 +10,6 @@ function trigger_ff_script:new(properties)
     properties = properties or {}
     setmetatable(properties, self)
     self.__index = self
-    for k, v in pairs(properties) do
-        self[k] = v
-    end
     return properties
 end
 

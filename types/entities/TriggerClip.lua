@@ -1,8 +1,6 @@
 ---@meta
 
----@class trigger_ff_clip : Trigger
----@field SetClipFlags function Sets the clip flags for the `trigger_ff_clip`.
-
+---@class trigger_ff_clip : BaseTrigger
 trigger_ff_clip = {}
 
 --- Creates a new `trigger_ff_clip` object.

@@ -1,8 +1,6 @@
 ---@meta
 
----@class Grenade
----@field Type function Returns the type of the grenade.
-
+---@class Grenade : BaseEntity
 Grenade = {}
 
 --- Grenade types enum

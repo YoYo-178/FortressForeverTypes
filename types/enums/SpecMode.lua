@@ -1,7 +1,6 @@
 ---@meta
 
 ---@enum SpecMode
-
 SpecMode = {
     kNone     = 0,
     kDeathCam = 1,

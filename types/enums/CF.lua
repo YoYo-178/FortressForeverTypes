@@ -1,7 +1,6 @@
 ---@meta
 
 ---@enum CF
-
 CF = {
     kNone                = 0,
 

@@ -1029,9 +1029,9 @@ function CastToGrenade(entity) end
 ---@return Dispenser
 function CastToDispenser(entity) end
 
---- Casts an entity to a SentryGun entity.
+--- Casts an entity to a Sentrygun entity.
 ---@param entity BaseEntity
----@return SentryGun
+---@return Sentrygun
 function CastToSentrygun(entity) end
 
 --- Casts an entity to a Detpack entity.
@@ -1127,7 +1127,7 @@ function GetPing(player) end
 function GetPlayer(entity) end
 
 --- Returns a player by its entity index number.
----@param entity BaseEntity The entity to get a `Player` from.
+---@param entity BaseEntity The entity index of the player.
 ---@return Player
 function GetPlayer(entity) end
 
@@ -1205,7 +1205,7 @@ function IsDispenser(entity) end
 --- Returns `true` if the entity specified is a Sentry Gun.
 ---@param entity BaseEntity The entity to check.
 ---@return boolean
-function IsSentrygun(entity) end
+function IsSentryGun(entity) end
 
 --- Returns `true` if the entity specified is a Detpack.
 ---@param entity BaseEntity The entity to check.
@@ -1333,16 +1333,10 @@ function SetGlobalRespawnDelay(delay) end
 ---@param limit number The team's player limit.
 function SetPlayerLimit(team, limit) end
 
---- Sets the player limit for the all teams.
+--- Sets the player limits for all teams.
 --- -1 sets it to unlimited.
----@param limit number The player limit to set.
+---@param limit number The player limit.
 function SetPlayerLimits(limit) end
-
---- Sets the limit for the specified team.
---- -1 sets it to unlimited.
----@param team number The team's index. (0 - 5)
----@param limit number The team's player limit.
-function SetPlayerLimit(team, limit) end
 
 --- Sets a ConVar's value on the server.
 ---@param cmd string
@@ -1479,12 +1473,12 @@ function ObjectiveNotice(player, message) end
 
 --- Sets a player's objective to an entity.
 ---@param player Player The player to set the objective of.
----@param entity BaseEntity The entity to set as the objective.
+---@param entity BaseEntity | nil The entity to set as the objective.
 function UpdateObjectiveIcon(player, entity) end
 
 --- Sets a team's objective to an entity.
 ---@param team Team The team to set the objective of.
----@param entity BaseEntity The entity to set as the objective.
+---@param entity BaseEntity | nil The entity to set as the objective.
 function UpdateTeamObjectiveIcon(team, entity) end
 
 --- Displays the specified message to the specified player. Same as `SendHintToPlayer(player, message)`.

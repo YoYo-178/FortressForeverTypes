@@ -1,7 +1,6 @@
 ---@meta
 
 ---@enum Hud
-
 Hud = {
     kIcon   = 0,
     kText   = 1,

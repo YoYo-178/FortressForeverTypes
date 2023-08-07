@@ -1,7 +1,6 @@
 ---@meta
 
 ---@enum Color
-
 Color = {
     kDefault = 0,
 

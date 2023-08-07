@@ -33,3 +33,10 @@ CustomColor = {
 
     kInvalid = 11,
 }
+
+--- Sets the color of the `CustomColor` object.
+---@param r integer The red value of the RGBA scale.
+---@param g integer The green value of the RGBA scale.
+---@param b integer The blue value of the RGBA scale.
+---@param a integer The alpha value of the RGBA scale.
+function CustomColor:SetColor(r, g, b, a) end
