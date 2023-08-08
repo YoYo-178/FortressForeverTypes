@@ -15,8 +15,8 @@ function BaseTeam:GetScore() end
 ---@param score integer The score to set.
 function BaseTeam:SetScore(score) end
 
---- unknown
----@return number
+--- Returns the time this team last scored.
+---@return float
 function BaseTeam:GetScoreTime() end
 
 --- Adds the specified amount of fortpoints to the team's fortpoints.

@@ -327,18 +327,19 @@ function Player:SetDisguise(team_id, class_id, instant) end
 function Player:ResetDisguise() end
 
 --- Adds the specified effect onto the player.
----@param effect integer The effect to apply.
----@param effect_duration integer The effect's duration. (-1 for infinite)
----@param icon_duration integer unknown.
----@param speed number unknown.
+---@param effect EF The effect to apply.
+---@param effect_duration float The effect's duration. (-1 for infinite)
+---@param icon_duration float unknown.
+---@param speed float unknown.
 function Player:AddEffect(effect, effect_duration, icon_duration, speed) end
 
 --- Returns `true` if the player has the specified effect active.
+---@param effect EF The effect to check.
 ---@return boolean
-function Player:IsEffectActive() end
+function Player:IsEffectActive(effect) end
 
 --- Removes the specified effect from the player.
----@param effect integer The effect to remove.
+---@param effect EF The effect to remove.
 function Player:RemoveEffect(effect) end
 
 --- Returns the player's steam ID.

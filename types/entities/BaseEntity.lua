@@ -11,22 +11,6 @@ function BaseEntity:EmitSound(sound) end
 ---@param sound string The sound to stop emitting.
 function BaseEntity:StopSound(sound) end
 
---- Stops the sound emitted from the entity.
----@param sound string The sound to stop emitting.
----@param handle unknown unknown
-function BaseEntity:StopSound(sound, handle) end
-
---- Stops the sound emitted from the entity.
----@param entity_id integer The index of the sound emitting entity.
----@param sound string The sound to stop emitting.
-function BaseEntity:StopSound(entity_id, sound) end
-
---- Stops the sound emitted from the entity.
----@param entity_id integer The index of the sound emitting entity.
----@param channel integer unknown
----@param sample string unknown
-function BaseEntity:StopSound(entity_id, channel, sample) end
-
 --- Returns the classname of the entity.
 ---@return string
 function BaseEntity:GetClassName() end
@@ -66,11 +50,6 @@ function BaseEntity:GetOwner() end
 --- Sets the model of the entity.
 ---@param model string The model to apply to the entity.
 function BaseEntity:SetModel(model) end
-
---- Sets the model of the entity.
----@param model string The model to apply to the entity.
----@param unknown integer unknown
-function BaseEntity:SetModel(model, unknown) end
 
 --- Makes the entity start emitting a trail.
 ---@param team_id integer The team's trail to emit.
