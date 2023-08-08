@@ -31,11 +31,11 @@ function DamageInfo:GetAmmoType() end
 
 --- Sets the damage.
 ---@param damage integer The damage to set.
-function DamageInfo:SetDamage( damage ) end
+function DamageInfo:SetDamage(damage) end
 
 --- Sets the damage force.
 ---@param force Vector The force to set.
-function DamageInfo:SetDamageForce( force ) end
+function DamageInfo:SetDamageForce(force) end
 
 --- Scales the damage by the specified amount.
 ---@param scale number The amount to scale the damage by.

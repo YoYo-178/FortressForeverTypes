@@ -12,4 +12,3 @@ function func_button:new(properties)
     self.__index = self
     return properties
 end
-

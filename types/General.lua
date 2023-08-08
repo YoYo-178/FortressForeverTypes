@@ -1374,7 +1374,8 @@ function SmartMessage(player, player_message, team_message, enemyteam_message) e
 ---@param player_message_color string | integer The color of the player's message.
 ---@param team_message_color string | integer The color of the player's team's message.
 ---@param enemyteam_message_color string | integer The color of the player's enemy team's message
-function SmartMessage(player, player_message, team_message, enemyteam_message, player_message_color, team_message_color, enemyteam_message_color) end
+function SmartMessage(player, player_message, team_message, enemyteam_message, player_message_color, team_message_color,
+                      enemyteam_message_color) end
 
 --- Broadcasts a sound to the specified player, the player's team, and the player's opposing team.
 ---@param player Player
@@ -1402,7 +1403,8 @@ function SmartTeamMessage(team, team_message, enemyteam_message) end
 ---@param enemyteam_message string The message to "broadcast" to the specified team's opposing team(s).
 ---@param team_message_color string | integer The color of the specified team's message.
 ---@param enemyteam_message_color string | integer The color of the specified team's opposing team(s) message.
-function SmartTeamMessage(team, team_message, enemyteam_message, player_message_color, team_message_color, enemyteam_message_color) end
+function SmartTeamMessage(team, team_message, enemyteam_message, player_message_color, team_message_color,
+                          enemyteam_message_color) end
 
 --- Broadcasts a sound to the specified team and it's opposing team(s).
 ---@param team Team The team to "broadcast" the sound to.
